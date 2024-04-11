@@ -1,0 +1,21 @@
+html,
+body {
+  background: #049bfb;
+  background-size: 100%;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+}
+
+img {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
