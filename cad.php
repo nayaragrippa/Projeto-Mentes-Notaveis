@@ -38,4 +38,5 @@
   
     // Fechando conexão
     mysqli_close($con);
+    header('Location: confirmed.html');
 ?>

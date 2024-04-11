@@ -1,10 +1,3 @@
-
-// redirecionar a pagina de confirmação
-function redirecionar() {
-    window.location.href='/confirmed.html'
-}
-
-
 /* Função Validar */
 function validar() {
     // pegando o valor do nome pelos names
@@ -55,7 +48,6 @@ function validar() {
       sexo.focus();
       return;
     }
-    redirecionar();
     // envia o formulário
     //formulario.submit();
 }
