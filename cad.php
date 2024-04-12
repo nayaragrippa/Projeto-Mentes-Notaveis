@@ -30,7 +30,7 @@
 
     if($nome == "" or $email == "" or $senha == "") {
         echo "<h1>Dados incorretos ou faltantes, informe os dados corretamente.</h1>"
-        .("<button onclick= \"location.href='index.php'\">Voltar</button>");
+        .("<button onclick= \"location.href='index.html'\">Voltar</button>");
     }
     else {
     // Realizando o insert query 
