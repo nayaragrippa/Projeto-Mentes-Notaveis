@@ -17,3 +17,21 @@ Este Projeto tem o objetivo de:
 Criação do servidor:
 
 ![Servidor funcionando](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/3035d6e0-7df2-4d17-9f26-f8bb6d3d68d4)
+
+Tela de cadastro:
+
+![Tela Cadastro](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/b72dc060-b3eb-4a0c-a760-600b4220e8f4)
+
+Erro falta de dados com JavaScript:
+
+![Erro sem nome](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/498558b1-e98d-41b7-9cfc-56c02f6739d9)
+
+Redirecionamento tela de confirmação:
+
+![Redirecinamento para tela de confirmação](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/d00b3d57-81f7-4ff0-b4a7-3927f45fcde7)
+
+Banco de dados funcionando:
+
+![Banco de dados funcionando](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/af054a67-d84c-49e7-a0d8-3dbc42eed77b)
+
+
