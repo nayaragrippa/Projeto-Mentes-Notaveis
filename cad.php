@@ -1,42 +1,58 @@
-<?php
-    if(isset($_POST['submit']))
-    {
-        $nome = $_POST['nome'];
-        $sobrenome = $_POST['sobrenome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        $telefone = $_POST['telefone'];
-        $cep = $_POST['cep'];
-        $sexo = $_POST['sexo'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmado!</title>
+    <link rel="stylesheet" href="estilo2.css" />
+</head>
+<body>
+    <script src="code.js"></script>
+    <img src="mentes_notveis_logo.jpeg" alt="Mentes notaveis logo">
+    <br>
+    <br>
+    <br>
+
+    <?php 
+
+    $conn = mysqli_connect("localhost", "root", "", "sampledb");
+         
+    // Check connection
+    if($conn === false){
+        die("ERROR: Could not connect. "
+            . mysqli_connect_error());
     }
+ 
+    // Taking all 3 values from the form data(input)
+    $nome =  $_REQUEST['nome'];
+    $email = $_REQUEST['email'];
+    $senha =  $_REQUEST['senha'];
 
-
-    // dados database
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "sampledb";
-
-    // criando uma conexão
-    $con = mysqli_connect($host, $username, $password, $dbname);
-
-    // Garantia que a conexão seja feita
-    if (!$con)
-    {
-        die("Connection failed!" . mysqli_connect_error());
+    if($nome == "" or $email == "" or $senha == "") {
+        echo "<h1>Dados incorretos ou faltantes, informe os dados corretamente.</h1>"
+        .("<button onclick= \"location.href='index.php'\">Voltar</button>");
     }
+    else {
+    // Performing insert query execution
+    // here our table name is contactform_entries
+    $sql = "INSERT INTO contactform_entries  VALUES ('$nome', 
+    '$email','$senha')";
 
-    // Usando SQL para entrada de dados
-    $sql = "INSERT INTO contactform_entries (id, nome, sobrenome, email, senha, telefone, cep, sexo) VALUES ('0', '$nome', '$sobrenome', '$email', '$senha', '$telefone', '$cep', '$sexo')";
-  
-    // Confirmando se o envio foi bem sucedido
-    $rs = mysqli_query($con, $sql);
-    if($rs)
-    {
-        echo "Entries added!";
+    if(mysqli_query($conn, $sql)){
+        
+        echo "<h1>Dados confirmados!</h1>"
+            .("<button onclick= \"location.href='index.php'\">Voltar</button>");
+        ; 
+
+
+    } else{
+        echo "ERROR: Hush! Sorry $sql. "
+            . mysqli_error($conn);
     }
-  
+        }
+
     // Fechando conexão
-    mysqli_close($con);
-    header('Location: confirmed.html');
+    mysqli_close($conn);
 ?>
+</body>
+</html>
