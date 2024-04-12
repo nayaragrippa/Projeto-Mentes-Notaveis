@@ -16,4 +16,4 @@ Este Projeto tem o objetivo de:
 
 Criação do servidor:
 
-![Servidor funcionando](imagens readme/Servidor funcionando.jpeg)
+![Servidor funcionando](https://github.com/nayaragrippa/Projeto-Mentes-Notaveis/assets/70596248/3035d6e0-7df2-4d17-9f26-f8bb6d3d68d4)
