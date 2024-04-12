@@ -41,7 +41,7 @@
     if(mysqli_query($conn, $sql)){
         
         echo "<h1>Dados confirmados!</h1>"
-            .("<button onclick= \"location.href='index.php'\">Voltar</button>");
+            .("<button onclick= \"location.href='index.html'\">Voltar</button>");
         ; 
 
 
