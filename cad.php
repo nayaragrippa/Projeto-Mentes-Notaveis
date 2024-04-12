@@ -17,13 +17,13 @@
 
     $conn = mysqli_connect("localhost", "root", "", "sampledb");
          
-    // Check connection
+    // Checando conexão
     if($conn === false){
         die("ERROR: Could not connect. "
             . mysqli_connect_error());
     }
  
-    // Taking all 3 values from the form data(input)
+    // Pegando três valores do formulário data(input)
     $nome =  $_REQUEST['nome'];
     $email = $_REQUEST['email'];
     $senha =  $_REQUEST['senha'];
@@ -33,8 +33,8 @@
         .("<button onclick= \"location.href='index.php'\">Voltar</button>");
     }
     else {
-    // Performing insert query execution
-    // here our table name is contactform_entries
+    // Realizando o insert query 
+    // Aqui o nome da nossa tabela é contactform_entries
     $sql = "INSERT INTO contactform_entries  VALUES ('$nome', 
     '$email','$senha')";
 
